@@ -1,0 +1,3 @@
+#!/usr/bin/ruby
+quotes = File.open(File.dirname(__FILE__) + "/../lib/quotes").read.split("\n\n")
+puts quotes[rand(quotes.length-1)].gsub("\n","\n\n")
